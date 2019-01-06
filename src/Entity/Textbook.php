@@ -5,12 +5,14 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TextbookRepository")
  */
 class Textbook
 {
+    // TODO Add ISBN number to fields
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -26,17 +28,33 @@ class Textbook
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $author;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $imageFilename;
+    private $authors;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Chapter", mappedBy="textbook", orphanRemoval=true)
      */
     private $chapters;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     * @Gedmo\Slug(fields={"title"})
+     */
+    private $slug;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="textbooks")
+     */
+    private $category;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $editor;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Image", inversedBy="textbooks")
+     */
+    private $image;
 
     public function __construct()
     {
@@ -60,26 +78,14 @@ class Textbook
         return $this;
     }
 
-    public function getAuthor(): ?string
+    public function getAuthors(): ?string
     {
-        return $this->author;
+        return $this->authors;
     }
 
-    public function setAuthor(string $author): self
+    public function setAuthors(string $authors): self
     {
-        $this->author = $author;
-
-        return $this;
-    }
-
-    public function getImageFilename(): ?string
-    {
-        return $this->imageFilename;
-    }
-
-    public function setImageFilename(?string $imageFilename): self
-    {
-        $this->imageFilename = $imageFilename;
+        $this->authors = $authors;
 
         return $this;
     }
@@ -111,6 +117,54 @@ class Textbook
                 $chapter->setTextbook(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    public function getEditor(): ?string
+    {
+        return $this->editor;
+    }
+
+    public function setEditor(?string $editor): self
+    {
+        $this->editor = $editor;
+
+        return $this;
+    }
+
+    public function getImage(): ?Image
+    {
+        return $this->image;
+    }
+
+    public function setImage(?Image $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }

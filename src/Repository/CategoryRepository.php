@@ -2,37 +2,39 @@
 
 namespace App\Repository;
 
-use App\Entity\Chapter;
+use App\Entity\Category;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\QueryBuilder;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
 /**
- * @method Chapter|null find($id, $lockMode = null, $lockVersion = null)
- * @method Chapter|null findOneBy(array $criteria, array $orderBy = null)
- * @method Chapter[]    findAll()
- * @method Chapter[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Category|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Category|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Category[]    findAll()
+ * @method Category[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class ChapterRepository extends ServiceEntityRepository
+class CategoryRepository extends ServiceEntityRepository
 {
     public function __construct(RegistryInterface $registry)
     {
-        parent::__construct($registry, Chapter::class);
+        parent::__construct($registry, Category::class);
     }
 
-    public function findAllContentForTextbook($id)
+    public function findAllCategories()
     {
-        return $this->getOrCreateQueryBuilder()
-            ->innerJoin('a.lessons', 'l')
-            ->select('a.title, l.title')
-            ->andWhere('a.textbook = :id')
-            ->setParameter('id', $id)
+        return $this->addOrCreateQueryBuilder()
+            ->leftJoin('a.image', 'i')
+            ->Select('a.id')
+            ->addSelect('a.slug')
+            ->addSelect('a.name')
+            ->addSelect('CONCAT(i.path, i.name) AS path')
             ->getQuery()
             ->getResult();
     }
 
+
     // /**
-    //  * @return Chapter[] Returns an array of Chapter objects
+    //  * @return Category[] Returns an array of Category objects
     //  */
     /*
     public function findByExampleField($value)
@@ -49,7 +51,7 @@ class ChapterRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Chapter
+    public function findOneBySomeField($value): ?Category
     {
         return $this->createQueryBuilder('c')
             ->andWhere('c.exampleField = :val')
@@ -59,7 +61,7 @@ class ChapterRepository extends ServiceEntityRepository
         ;
     }
     */
-    private function getOrCreateQueryBuilder(QueryBuilder $qb = null)
+    private function addOrCreateQueryBuilder(QueryBuilder $qb = null)
     {
         return $qb ?: $this->createQueryBuilder('a');
     }

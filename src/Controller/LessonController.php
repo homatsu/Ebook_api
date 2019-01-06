@@ -13,9 +13,15 @@ class LessonController extends AbstractController
      */
     public function getLesson(Lesson $lesson)
     {
+        $data = [
+            'id' => $lesson->getId(),
+            'title' => $lesson->getTitle(),
+            'content' => $lesson->getContent(),
+            'slug' => $lesson->getSlug(),
+        ];
         return $this->json([
             'message' => 'Lesson found',
-            'lesson' => $lesson
+            'data' => $data
         ]);
     }
 }

@@ -4,9 +4,10 @@ namespace App\DataFixtures;
 
 use App\Entity\Lesson;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 
-class LessonFixtures extends BaseFixture
+class LessonFixtures extends BaseFixture implements DependentFixtureInterface
 {
     private static $lessonTitle = [
         'Why Asteroids Taste Like Bacon',
@@ -16,14 +17,22 @@ class LessonFixtures extends BaseFixture
 
     protected function loadData(ObjectManager $manager)
     {
-        $this->createMany(10, 'lessons', function () {
+        $this->createMany(75, 'lessons', function () {
             $lesson = new Lesson();
             $lesson->setTitle($this->faker->randomElement(self::$lessonTitle));
             $lesson->setContent('<p><b>Hej</b> To dziala </p>');
+            $lesson->setChapter($this->getRandomReference('chapters'));
 
             return $lesson;
         });
 
         $manager->flush();
+    }
+
+    public function getDependencies()
+    {
+       return [
+           ChapterFixtures::class
+       ];
     }
 }

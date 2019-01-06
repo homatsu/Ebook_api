@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Textbook;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\QueryBuilder;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
 /**
@@ -19,6 +20,38 @@ class TextbookRepository extends ServiceEntityRepository
         parent::__construct($registry, Textbook::class);
     }
 
+    public function findAllTextbooks()
+    {
+        return $this->getOrCreateQueryBuilder()
+            ->Select('a.id')
+            ->addSelect('a.title, a.author, a.imageFilename')
+            ->getQuery()
+            ->getResult();
+    }
+
+    //TODO to remove
+//    public function findAllChapterForBook($slug)
+//    {
+//        return $this->getOrCreateQueryBuilder()
+//            ->leftJoin('a.chapters', 'c')
+//            ->select('c.title')
+//            ->andWhere('a.slug = :slug')
+//            ->setParameter('slug', $slug)
+//            ->getQuery()
+//            ->getResult();
+//    }
+
+    public function findAllBooksForCategory($id)
+    {
+        return $this->getOrCreateQueryBuilder()
+            ->leftJoin('a.image', 'i')
+            ->select('a.title, a.authors, a.slug, a.editor')
+            ->addSelect('CONCAT(i.path, i.name) AS path')
+            ->andWhere('a.category = :id')
+            ->setParameter('id', $id)
+            ->getQuery()
+            ->getResult();
+    }
     // /**
     //  * @return Textbook[] Returns an array of Textbook objects
     //  */
@@ -47,4 +80,7 @@ class TextbookRepository extends ServiceEntityRepository
         ;
     }
     */
+    private function getOrCreateQueryBuilder(QueryBuilder $qb = null) {
+        return $qb ?: $this->createQueryBuilder('a');
+    }
 }
