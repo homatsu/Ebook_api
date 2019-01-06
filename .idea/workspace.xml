@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="421a7246-aa67-4eed-9723-2ad67ddbc798" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/category/fizyka.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/category/test.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SectionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/TextbookFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/section/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Ebook_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ebook_api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LessonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LessonController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Chapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Chapter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Textbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Textbook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ChapterRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ChapterRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/TextbookRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TextbookRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,13 +69,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="289">
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
               <folding>
                 <element signature="e#34#54#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="e#36#58#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/Entity/Lesson.php" />
         <option value="$PROJECT_DIR$/src/Security/ApiTokenAuthenticator.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/ChapterFixtures.php" />
-        <option value="$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php" />
         <option value="$PROJECT_DIR$/src/Entity/Chapter.php" />
         <option value="$PROJECT_DIR$/src/Controller/LessonController.php" />
         <option value="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" />
@@ -145,6 +138,7 @@
         <option value="$PROJECT_DIR$/src/Repository/TextbookRepository.php" />
         <option value="$PROJECT_DIR$/src/Repository/ChapterRepository.php" />
         <option value="$PROJECT_DIR$/src/Controller/SectionController.php" />
+        <option value="$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php" />
       </list>
     </option>
   </component>
@@ -360,12 +354,12 @@
       <workItem from="1546514445318" duration="16388000" />
       <workItem from="1546599001665" duration="747000" />
       <workItem from="1546600066706" duration="17091000" />
-      <workItem from="1546783606087" duration="1014000" />
+      <workItem from="1546783606087" duration="1282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57823000" />
+    <option name="totallyTimeSpent" value="58091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,7 +374,7 @@
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2428884" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2428884" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -393,7 +387,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32932165" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21991247" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21991247" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -515,16 +509,6 @@
           <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
           <folding>
             <element signature="e#36#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <element signature="e#36#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -778,10 +762,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="289">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding>
             <element signature="e#34#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#36#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
