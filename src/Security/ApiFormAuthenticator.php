@@ -71,8 +71,8 @@ class ApiFormAuthenticator extends AbstractGuardAuthenticator
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception)
     {
         return new JsonResponse([
-            'message' => $exception->getMessageKey()
-        ], 401);
+            'message' => "error"
+        ]);
     }
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, $providerKey)

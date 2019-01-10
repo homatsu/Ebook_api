@@ -31,7 +31,7 @@ class Chapter
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Textbook", inversedBy="chapters")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $textbook;
 
@@ -45,6 +45,11 @@ class Chapter
      * @Gedmo\Slug(fields={"title"})
      */
     private $slug;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\UserTextbook", inversedBy="chapters")
+     */
+    private $userTextbook;
 
     public function __construct()
     {
@@ -131,6 +136,18 @@ class Chapter
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
+
+        return $this;
+    }
+
+    public function getUserTextbook(): ?UserTextbook
+    {
+        return $this->userTextbook;
+    }
+
+    public function setUserTextbook(?UserTextbook $userTextbook): self
+    {
+        $this->userTextbook = $userTextbook;
 
         return $this;
     }

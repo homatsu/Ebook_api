@@ -40,9 +40,15 @@ class User implements UserInterface
      */
     private $apiTokens;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\UserTextbook", mappedBy="user")
+     */
+    private $userTextbooks;
+
     public function __construct()
     {
         $this->apiTokens = new ArrayCollection();
+        $this->userTextbooks = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -148,6 +154,37 @@ class User implements UserInterface
             // set the owning side to null (unless already changed)
             if ($apiToken->getUser() === $this) {
                 $apiToken->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|UserTextbook[]
+     */
+    public function getUserTextbooks(): Collection
+    {
+        return $this->userTextbooks;
+    }
+
+    public function addUserTextbook(UserTextbook $userTextbook): self
+    {
+        if (!$this->userTextbooks->contains($userTextbook)) {
+            $this->userTextbooks[] = $userTextbook;
+            $userTextbook->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUserTextbook(UserTextbook $userTextbook): self
+    {
+        if ($this->userTextbooks->contains($userTextbook)) {
+            $this->userTextbooks->removeElement($userTextbook);
+            // set the owning side to null (unless already changed)
+            if ($userTextbook->getUser() === $this) {
+                $userTextbook->setUser(null);
             }
         }
 

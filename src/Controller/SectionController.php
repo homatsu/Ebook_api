@@ -4,9 +4,13 @@ namespace App\Controller;
 
 use App\Entity\Category;
 use App\Entity\Textbook;
+use App\Entity\UserTextbook;
 use App\Repository\CategoryRepository;
 use App\Repository\ChapterRepository;
 use App\Repository\TextbookRepository;
+use App\Repository\UserTextbookRepository;
+use Doctrine\ORM\EntityManagerInterface;
+use Gedmo\Mapping\Annotation\Slug;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -48,8 +52,11 @@ class SectionController extends AbstractController
     /**
      * @Route("/api/textbook/{slug}", name="api_chapters")
      */
-    public function getChapters(Textbook $textbook)
+    public function getChapters($slug, TextbookRepository $textbookRepository, UserTextbookRepository $userTextbookRepository)
     {
+        $textbook = $textbookRepository->findOneBy(['slug' => $slug]);
+        if($textbook === null)
+            $textbook = $userTextbookRepository->findOneBy(['slug' => $slug]);
         //TODO change for repository????
         // TODO swap to search with ID
         $chapters = $textbook->getChapters();
@@ -73,7 +80,10 @@ class SectionController extends AbstractController
 
         return $this->json([
             'message' => 'Book found',
-            'data' => $data
+            'data' => $data,
+            'additionalData' => [
+                'textbookTitle' => $textbook->getTitle()
+            ]
         ]);
     }
 }
