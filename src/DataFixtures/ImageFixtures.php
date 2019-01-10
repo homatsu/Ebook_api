@@ -9,11 +9,9 @@ use Doctrine\Common\Persistence\ObjectManager;
 class ImageFixtures extends BaseFixture
 {
     private static $imagesList = [
-        'test.jpg',
+        'chemia.jpg',
         'fizyka.jpg',
-        'test1.png',
-        'test2.png',
-        'test3.jpg',
+        'matematyka.jpg'
     ];
 
     private static $imagesListTextbook = [
@@ -28,7 +26,7 @@ class ImageFixtures extends BaseFixture
 
     protected function loadData(ObjectManager $manager)
     {
-        $this->createMany(5, 'images', function ($i) {
+        $this->createMany(3, 'images_category', function ($i) {
             $image = new Image();
             $image->setPath('/images/category/')
                 ->setName(self::$imagesList[$i]);
@@ -36,7 +34,7 @@ class ImageFixtures extends BaseFixture
             return $image;
         });
 
-        $this->createMany(6, 'images_category', function ($i) {
+        $this->createMany(6, 'images_book_yea', function ($i) {
             $image = new Image();
             $image->setPath('/images/textbook/')
                 ->setName(self::$imagesListTextbook[$i]);

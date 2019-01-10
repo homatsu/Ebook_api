@@ -17,7 +17,7 @@ class TextbookFixtures extends BaseFixture implements DependentFixtureInterface
                ->setEditor($this->faker->name)
                ->setCategory($this->getRandomReference('categories'))
                ->setTitle($this->faker->sentence(2, true))
-               ->setImage($this->getRandomReference('images_category'));
+               ->setImage($this->getRandomReference('images_book_yea'));
            return $textbook;
         });
 
@@ -27,7 +27,8 @@ class TextbookFixtures extends BaseFixture implements DependentFixtureInterface
     public function getDependencies()
     {
        return [
-           CategoryFixtures::class
+           CategoryFixtures::class,
+           ImageFixtures::class
        ];
     }
 

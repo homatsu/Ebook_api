@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="421a7246-aa67-4eed-9723-2ad67ddbc798" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SectionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Chapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Chapter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/ApiFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/ApiFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/category/fizyka.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/category/fizyka.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/category/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/category/test1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/category/test2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/category/test3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ImageFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ImageFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/TextbookFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/TextbookFixtures.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,24 +36,72 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/ImageFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+            <state relative-caret-position="459">
+              <caret line="36" column="45" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="45" />
               <folding>
-                <element signature="e#34#57#0#PHP" expanded="true" />
+                <element signature="e#36#57#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="654">
+              <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+              <folding>
+                <element signature="e#36#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/ChapterFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="59" />
+              <folding>
+                <element signature="e#36#59#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/BaseFixture.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="73" column="66" lean-forward="true" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
+              <folding>
+                <element signature="e#36#79#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Security/ApiFormAuthenticator.php">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/TextbookFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+            <state relative-caret-position="212">
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
               <folding>
-                <element signature="e#32#56#0#PHP" expanded="true" />
+                <element signature="e#36#60#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+              <folding>
+                <element signature="e#36#95#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,21 +139,21 @@
         <option value="$PROJECT_DIR$/src/Controller/LessonController.php" />
         <option value="$PROJECT_DIR$/src/Entity/Category.php" />
         <option value="$PROJECT_DIR$/src/Controller/ImageController.php" />
-        <option value="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" />
         <option value="$PROJECT_DIR$/src/Entity/Image.php" />
         <option value="$PROJECT_DIR$/src/Repository/CategoryRepository.php" />
-        <option value="$PROJECT_DIR$/src/DataFixtures/ImageFixtures.php" />
         <option value="$PROJECT_DIR$/src/Repository/TextbookRepository.php" />
         <option value="$PROJECT_DIR$/src/Repository/ChapterRepository.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php" />
         <option value="$PROJECT_DIR$/src/Entity/Textbook.php" />
-        <option value="$PROJECT_DIR$/src/DataFixtures/TextbookFixtures.php" />
         <option value="$PROJECT_DIR$/src/Entity/UserTextbook.php" />
         <option value="$PROJECT_DIR$/src/Entity/Chapter.php" />
         <option value="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/SectionController.php" />
         <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/Security/ApiFormAuthenticator.php" />
+        <option value="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" />
+        <option value="$PROJECT_DIR$/src/DataFixtures/ImageFixtures.php" />
+        <option value="$PROJECT_DIR$/src/DataFixtures/TextbookFixtures.php" />
       </list>
     </option>
   </component>
@@ -188,7 +238,7 @@
       <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -340,12 +390,12 @@
       <workItem from="1546892538868" duration="1633000" />
       <workItem from="1546897297149" duration="140000" />
       <workItem from="1546977392436" duration="10887000" />
-      <workItem from="1547104165930" duration="2821000" />
+      <workItem from="1547104165930" duration="4378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74847000" />
+    <option name="totallyTimeSpent" value="76404000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,16 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/BaseFixture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
-          <folding>
-            <element signature="e#36#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/example/app/Entity/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -589,16 +629,6 @@
     <entry file="file://$PROJECT_DIR$/public/images/category/test1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/ImageFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="44" />
-          <folding>
-            <element signature="e#36#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/CategoryRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -617,36 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="e#30#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/ChapterFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#36#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="e#36#95#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1521">
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
           <folding>
             <element signature="e#30#78#0#PHP" expanded="true" />
           </folding>
@@ -677,16 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
-          <folding>
-            <element signature="e#36#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -708,16 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/TextbookFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="e#36#60#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,12 +725,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SectionController.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/Image.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+        <state relative-caret-position="246">
+          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
           <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Security/ApiFormAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+          <folding>
+            <element signature="e#32#56#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -765,12 +755,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Security/ApiFormAuthenticator.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/SectionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+        <state relative-caret-position="566">
+          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
           <folding>
-            <element signature="e#32#56#0#PHP" expanded="true" />
+            <element signature="e#34#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/ImageFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="e#36#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/BaseFixture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="73" column="66" lean-forward="true" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
+          <folding>
+            <element signature="e#36#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+          <folding>
+            <element signature="e#36#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/LessonFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+          <folding>
+            <element signature="e#36#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/ChapterFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="59" />
+          <folding>
+            <element signature="e#36#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/TextbookFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="e#36#60#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

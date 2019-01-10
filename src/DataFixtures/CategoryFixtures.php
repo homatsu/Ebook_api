@@ -19,7 +19,7 @@ class CategoryFixtures extends BaseFixture implements DependentFixtureInterface
         $this->createMany(3, 'categories', function ($i) {
            $category = new Category();
            $category->setName(self::$categories[$i])
-               ->setImage($this->getRandomReference('images'));
+               ->setImage($this->getRandomReference('images_category'));
 
            return $category;
         });
